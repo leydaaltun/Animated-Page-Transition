@@ -17,6 +17,8 @@ var FadeTransition = Barba.BaseTransition.extend({
     return $(this.oldContainer).animate({ opacity: 0 }).promise();
     },
     fadeIn: function() {
+        $(window).scrollTop(0)
+
     /**
 * this.newContainer is the HTMLElement of the new Container
 * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
