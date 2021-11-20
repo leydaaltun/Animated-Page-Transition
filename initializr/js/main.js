@@ -45,8 +45,8 @@ Barba.Pjax.getTransition = function() {
     var tl = new TimelineMax()
     tl
     .to(".screen-wipe-top", 0.5, {y:"50%", repeat: 1, yoyo: true})
-    .to(".screen-wipe-bottom", 0.5, {y:"-50%", repeat: 1, yoyo: true})
-    
+    .to(".screen-wipe-bottom", 0.5, {y:"-50%", repeat: 1, yoyo: true}, "-=1")
+
     /**
 * Here you can use your own logic!
 * For example you can use different Transition based on the current page or link...
